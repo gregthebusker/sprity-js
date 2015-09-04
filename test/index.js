@@ -126,7 +126,7 @@ describe('sprity-js', function () {
         style.should.equal(fs.readFileSync('test/expected/style.js').toString());
       });
   });
-  it('should return js as expected for fixture2', function (done) {
+  it('should return js as expected when folders are split', function (done) {
     jsProc.process(fixture2, {}, Handlebars)
       .then(function (s) {
         var style = prettydiff.api({
