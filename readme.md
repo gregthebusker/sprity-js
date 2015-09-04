@@ -13,18 +13,35 @@
 ## Install
 
 ```sh
-npm install sprity
+npm install sprity sprity-js --save-dev
 ```
 
-If you want to use the command line interface of `sprity` install it globally.
-
-```
-npm install sprity -g
-```
 
 ## Usage
 
-See [sprity](https://npmjs.org/package/sprity) documentation
+Here's a example using gulp, but see [sprity](https://npmjs.org/package/sprity) for full documentation.
+
+
+```sh
+var gulp = require('gulp')
+var sprity = require('sprity');
+var sprityJS = require('sprity-js');
+
+gulp.task('sprites', function () {
+  return sprity.src({
+    src: './images/**/*.png',
+    style: 'Sprite.js',
+    dimension: [{
+      ratio: 1, dpi: 72
+    }, {
+      ratio: 2, dpi: 144
+    }],
+    split: true,
+    processor: sprityJS // The important part for sprity JS
+  })
+  .pipe(gulp.dest('sprites/'));
+});
+```
 
 ---
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sprity/sprity?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
