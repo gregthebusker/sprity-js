@@ -20,8 +20,6 @@
   },
   "scripts": {
     "test": "mocha --reporter spec",
-    "hint": "eslint index.js",
-    "style": "jscs index.js"
   },
   "main": "./index.js",
   "keywords": [
