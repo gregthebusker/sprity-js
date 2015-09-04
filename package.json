@@ -1,0 +1,44 @@
+{
+  "name": "sprity-js",
+  "version": "1.0.0",
+  "description": "js style processor for sprity",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gregthebusker/sprity-js.git"
+  },
+  "homepage": "https://github.com/gregthebusker/sprity-js",
+  "bugs": {
+    "url": "https://github.com/gregthebusker/sprity-js/issues"
+  },
+  "author": {
+    "name": "Greg Schechter",
+    "email": "gregthebusker@gmail.com",
+    "url": "http://gregthebusker.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "hint": "eslint index.js",
+    "style": "jscs index.js"
+  },
+  "main": "./index.js",
+  "keywords": [
+    "sprites",
+    "sprite",
+    "js",
+    "js-sprite",
+    "sprity"
+  ],
+  "dependencies": {
+    "bluebird": "^2.9.24",
+    "humps": "^0.6.0"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "handlebars": "^4.0.2",
+    "mocha": "^2.2.4",
+    "prettydiff": "^1.11.11"
+  }
+}
