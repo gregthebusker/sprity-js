@@ -12,8 +12,8 @@ Check out [React: css in js](https://speakerdeck.com/vjeux/react-css-in-js) for 
 
 Here's a couple advantages. You'll see the details in the code examples below.
 
-- Programmatic checking
-- Override image without worrying about specificity or order
+- [Programmatic checking](#programmatic-checking)
+- [Overwriting styles](overwriting-styles) and images without worrying about specificity or order
 
 
 ## Requirements
@@ -100,8 +100,8 @@ class Icon extends React.Component {
         return (
             <span
                 style={[
-                    this.props.sprite,
-                    ':hover': this.props.hoverSprite,
+                    this.props.sprite,  // Radium automatically handles the @media rules in your sprite object
+                    {':hover': this.props.hoverSprite},
                 ]}
             />
         );
@@ -120,7 +120,7 @@ One of the issues I ran into using sprity with css outputs was with not being ab
 ```sh
 style={[
     this.props.sprite,
-    ':hover': this.props.hoverSprite,
+    {':hover': this.props.hoverSprite}
 ]}
 ```
 
@@ -146,7 +146,7 @@ class Icon extends React.Component {
                     // You may want to pass `App` as a prop as well.
                     Sprties.App[this.props.sprite],
                     // If the sprite does not have a hover state this will be undefined and still work great.
-                    ':hover': Sprties.App[this.props.sprite + 'Hover'],
+                    {':hover': Sprties.App[this.props.sprite + 'Hover']},
                 ]}
             />
         );
