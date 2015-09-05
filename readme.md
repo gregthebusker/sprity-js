@@ -13,7 +13,7 @@ Check out [React: css in js](https://speakerdeck.com/vjeux/react-css-in-js) for 
 Here's a couple advantages. You'll see the details in the code examples below.
 
 - [Programmatic checking](#programmatic-checking)
-- [Overwriting styles](overwriting-styles) and images without worrying about specificity or order
+- [Overwriting styles](#overwriting-styles) and images without worrying about specificity or order
 
 
 ## Requirements
