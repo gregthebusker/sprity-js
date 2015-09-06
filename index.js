@@ -8,6 +8,10 @@ module.exports = {
     process: function (layouts, opt, Handlebars) {
         var result = {};
         var ratio;
+        var sortByDim = function (a, b) {
+          return a.ratio - b.ratio;
+        };
+
         if (opt.dimension) {
             opt.dimension.sort(sortByDim).reverse();
             opt.dimension[opt.dimension.length - 1].default = true;
