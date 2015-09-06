@@ -19,6 +19,7 @@ module.exports = {
         } else {
             ratio = 1;
         }
+
         var baseDim = function(size) {
             return ratio * size;
         };
