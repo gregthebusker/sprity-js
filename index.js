@@ -7,7 +7,14 @@ var prettydiff = require('prettydiff');
 module.exports = {
     process: function (layouts, opt, Handlebars) {
         var result = {};
-        var ratio = opt.dimension[opt.dimension.length - 1].ratio / opt.dimension[0].ratio;
+        var ratio;
+        if (opt.dimension) {
+            opt.dimension.sort(sortByDim).reverse();
+            opt.dimension[opt.dimension.length - 1].default = true;
+            ratio = opt.dimension[opt.dimension.length - 1].ratio / opt.dimension[0].ratio;
+        } else {
+            ratio = 1;
+        }
         var baseDim = function(size) {
             return ratio * size;
         };

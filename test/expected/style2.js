@@ -1,4 +1,4 @@
-export default {
+module.exports = {
     "TestFolder1": {
         "Test1": {
             "backgroundPosition": "-0px -0px",

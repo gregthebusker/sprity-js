@@ -1,4 +1,4 @@
-export default {
+module.exports = {
     "Default": {
         "Png": {
             "backgroundPosition": "-0px -0px",
