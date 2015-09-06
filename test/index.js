@@ -9,6 +9,12 @@ require('mocha');
 
 var jsProc = require('../index');
 
+var ratio = 1;
+
+Handlebars.registerHelper('baseDim', function (size) {
+  return Math.round(size * ratio);
+});
+
 var fixture = [{
   name: 'default',
   classname: 'icon',
