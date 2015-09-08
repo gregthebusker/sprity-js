@@ -1,6 +1,6 @@
 {
   "name": "sprity-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "js style processor for sprity",
   "repository": {
     "type": "git",
@@ -31,12 +31,12 @@
   ],
   "dependencies": {
     "bluebird": "^2.9.24",
-    "humps": "^0.6.0"
+    "humps": "^0.6.0",
+    "prettydiff": "^1.11.11"
   },
   "devDependencies": {
     "chai": "^3.2.0",
     "handlebars": "^4.0.2",
-    "mocha": "^2.2.4",
-    "prettydiff": "^1.11.11"
+    "mocha": "^2.2.4"
   }
 }
