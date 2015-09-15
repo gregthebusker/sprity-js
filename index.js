@@ -21,12 +21,11 @@ module.exports = {
                     if (sprite.dpi) {
                         rules['@media (-webkit-min-device-pixel-ratio: ' + sprite.ratio + '), (min-resolution: ' + sprite.dpi + 'dpi)'] = {
                             backgroundImage: "url('" + sprite.url + "')",
-                            backgroundSize: Handlebars.helpers.baseDim(sprite.width) + 'px ' + Handlebars.helpers.baseDim(sprite.height) + 'px',
                         };
                     } else {
                         rules.backgroundImage = "url('" + sprite.url + "')";
-                        rules.backgroundSize = Handlebars.helpers.baseDim(sprite.width) + 'px ' + Handlebars.helpers.baseDim(sprite.height) + 'px';
                     }
+                    rules.backgroundSize = Handlebars.helpers.baseDim(sprite.width) + 'px ' + Handlebars.helpers.baseDim(sprite.height) + 'px';
                 });
 
                 items[humps.pascalize(item.meta.name)] = rules;
