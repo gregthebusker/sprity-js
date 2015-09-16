@@ -14,6 +14,7 @@ Here's a couple advantages. You'll see the details in the code examples below.
 
 - [Programmatic checking](#programmatic-checking)
 - [Overwriting styles](#overwriting-styles) and images without worrying about specificity or order
+- [Easy Linting](#easy-linting)
 
 
 ## Requirements
@@ -157,6 +158,11 @@ class Icon extends React.Component {
 
 <Icon sprite="Rocketship" />
 ```
+
+## Easy Linting
+
+Now that all our sprite are in a js file its easy to itterator over them and lint them.
+Check out this [gist for making sure hover and active images have the same dimensions as their root image](https://gist.github.com/gregthebusker/97ff53a932fd7cf002ee)
 
 ---
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sprity/sprity?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
