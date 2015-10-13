@@ -30,9 +30,9 @@
     "sprity"
   ],
   "dependencies": {
-    "bluebird": "^2.10.1",
-    "humps": "^0.7.0",
-    "prettydiff": "^1.13.8"
+    "bluebird": "^2.10.2",
+    "humps": "^1.0.0",
+    "prettydiff": "^1.14.7"
   },
   "devDependencies": {
     "chai": "^3.3.0",
