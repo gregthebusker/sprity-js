@@ -65,7 +65,7 @@ var fixture = [{
 
 
 var fixture2 = [{
-        "name": "testFolder1",
+        "name": "bTestFolder",
         "classname": "icon-testFolder1",
         "layout": {
             "height": 40,
@@ -111,7 +111,54 @@ var fixture2 = [{
                 "baseHeight": 20
             }
         ]
-    }
+    }, {
+    "name": "aTestFolder",
+    "classname": "icon-testFolder1",
+    "layout": {
+        "height": 40,
+        "width": 40,
+        "items": [
+            {
+                "height": 40,
+                "width": 40,
+                "meta": {
+                    "base": "testFolder1",
+                    "fileName": "testFolder1/test1.png",
+                    "height": 32,
+                    "name": "test1",
+                    "path": "/Users/gregschechter/sprity-js/test/test-images/testFolder1/test1.png",
+                    "type": "png",
+                    "width": 32
+                },
+                "x": 0,
+                "y": 0
+            }
+        ]
+    },
+    "sprites": [
+        {
+            "name": "sprite-testFolder1",
+            "url": "/static/sprites/styles/sprite-testFolder1.png",
+            "type": "png",
+            "dpi": null,
+            "ratio": null,
+            "width": 20,
+            "height": 20,
+            "baseWidth": 20,
+            "baseHeight": 20
+        }, {
+            "name": "sprite-testFolder1@2x",
+            "url": "/static/sprites/styles/sprite-testFolder1@2x.png",
+            "type": "png",
+            "dpi": 144,
+            "ratio": 2,
+            "width": 40,
+            "height": 40,
+            "baseWidth": 20,
+            "baseHeight": 20
+        }
+    ]
+}
 ];
 
 describe('sprity-js', function () {

@@ -33,8 +33,16 @@ module.exports = {
 
             result[humps.pascalize(layout.name)] = items;
         });
+
+        var keys = Object.keys(result);
+        keys.sort();
+        var orderedResult = {};
+        keys.forEach(function(key) {
+            orderedResult[key] = result[key];
+        });
+
         return Promise.method(function (layouts, opt, Handlebars) {
-            var source = 'module.exports = ' + JSON.stringify(result);
+            var source = 'module.exports = ' + JSON.stringify(orderedResult);
             var style = prettydiff.api({
               source: source,
               lang: 'js',
