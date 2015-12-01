@@ -30,7 +30,7 @@
     "sprity"
   ],
   "dependencies": {
-    "bluebird": "^2.10.2",
+    "bluebird": "^3.0.6",
     "chai": "^3.4.0",
     "humps": "^1.0.0",
     "prettydiff": "^1.14.8"
