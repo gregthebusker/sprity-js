@@ -35,6 +35,6 @@
   "devDependencies": {
     "chai": "^3.4.1",
     "handlebars": "^4.0.5",
-    "mocha": "^2.3.4",
+    "mocha": "^2.3.4"
   }
 }
