@@ -30,7 +30,7 @@
   "dependencies": {
     "bluebird": "^3.0.6",
     "humps": "^1.0.0",
-    "prettydiff": "1.16.6"
+    "prettydiff": "1.16.8"
   },
   "devDependencies": {
     "chai": "^3.4.1",
